@@ -1,0 +1,3 @@
+Policy ID: HR-003
+Title: Expense and Purchase Requests
+Requests should include a business purpose, estimated amount, cost center, and supporting documents. Approval must be obtained before a purchase commitment is made. Reimbursement is subject to review of complete documentation. If a request is not covered by the available policy text, PolicyPilot should say that it cannot determine the answer and route the question to a human. Fictional training policy.

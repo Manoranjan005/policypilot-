@@ -1,0 +1,57 @@
+text,label
+How early must I submit planned leave,leave
+I need emergency leave today who do I tell,leave
+Who approves my vacation request,leave
+How do I correct my attendance record,leave
+Can I take a day off next week,leave
+What is the deadline to fix a missed attendance entry,leave
+Do I need manager approval for time off,leave
+Request sick leave process,leave
+Can I work from home on Fridays,remote_work
+Who agrees my working hours when remote,remote_work
+Can I copy confidential files to personal storage at home,remote_work
+How do I request a remote work exception,remote_work
+Which network should I use while working remotely,remote_work
+Am I allowed to use my own laptop for remote work,remote_work
+Rules for working from a coffee shop,remote_work
+What availability do I owe my manager when remote,remote_work
+Do I have to use multi-factor authentication,credentials
+What should I do if my API key leaked,credentials
+Can I share my password with a teammate,credentials
+Where should I store secrets,credentials
+Can I commit tokens to Git,credentials
+How do I rotate exposed credentials,credentials
+What are recovery codes and who can see them,credentials
+Report suspected password exposure,credentials
+What should I do if I lose my laptop,device_security
+Do I need to lock my screen,device_security
+Can I paste confidential data into a public AI tool,device_security
+How are software updates installed,device_security
+Where can I store company files,device_security
+My phone with work data was stolen,device_security
+Is it okay to leave my computer unattended,device_security
+Are public AI chatbots allowed for company data,device_security
+What details go in an incident report,incidents
+Should I guess the root cause of an outage,incidents
+Who do I escalate an urgent interruption to,incidents
+Do I need to keep logs after an incident,incidents
+What happens after an incident is resolved,incidents
+How do I report a system failure,incidents
+What is the business impact section of a report,incidents
+Who is the support lead for urgent issues,incidents
+Can I buy equipment before approval,expenses
+What must a purchase request include,expenses
+How do I get reimbursed,expenses
+What is a cost center,expenses
+Do I need receipts for reimbursement,expenses
+Who approves purchase commitments,expenses
+Submit an expense claim steps,expenses
+What documents support a purchase request,expenses
+What is the weather today,other
+Tell me a joke,other
+Who won the cricket match,other
+Translate this sentence to French,other
+Write a poem about the sea,other
+What is the capital of Japan,other
+Recommend a good movie,other
+How do I cook rice,other

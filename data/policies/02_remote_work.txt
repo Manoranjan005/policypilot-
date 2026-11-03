@@ -1,0 +1,3 @@
+Policy ID: HR-002
+Title: Remote Work (Synthetic Training Policy)
+Team members should agree working hours and availability with their manager. Company-approved devices and secure network access should be used for work. Confidential files must not be copied to personal storage. Requests for remote-work exceptions should be documented and reviewed by the manager. This fictional policy is only for training.

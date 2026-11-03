@@ -1,0 +1,3 @@
+Policy ID: IT-003
+Title: Incident Reporting
+Report the time observed, affected system, business impact, and actions already taken. Avoid guessing the root cause before evidence is available. Preserve relevant logs while respecting access controls. Escalate urgent interruptions to the designated support lead. After resolution, document corrective and preventive actions. Synthetic training content only.

@@ -1,0 +1,3 @@
+Policy ID: HR-001
+Title: Leave and Attendance (Synthetic Training Policy)
+Planned leave requests should be submitted at least three working days in advance. Emergency leave should be reported to the manager as soon as practical. Approval depends on team coverage and manager review. Attendance corrections should be reported to the project coordinator within two working days. This fictional policy is only for the PolicyPilot internship dataset and is not legal or real company guidance.

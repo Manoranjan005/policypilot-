@@ -1,0 +1,3 @@
+Policy ID: IT-002
+Title: Device and Data Security
+Lock devices when unattended. Install updates through approved processes. Use approved storage locations for company files. Do not upload confidential information to public AI tools. Report lost devices or suspected data exposure promptly. This fictional document is for retrieval and answer-grounding practice only.

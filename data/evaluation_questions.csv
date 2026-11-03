@@ -1,0 +1,11 @@
+question,expected_type,expected_policy_id
+How early should planned leave be submitted?,answerable,HR-001
+What should I do if I suspect an API key was exposed?,answerable,IT-001
+Can I copy confidential files to personal storage while working remotely?,answerable,HR-002
+What details should be included in an incident report?,answerable,IT-003
+What is the company's maternity leave entitlement?,unanswerable,
+What is the annual reimbursement cap?,unanswerable,
+What should I do if I lose a device?,answerable,IT-002
+Can I purchase equipment before approval?,answerable,HR-003
+What is the exact legal notice period for resignation?,unanswerable,
+Should I guess the cause of an IT incident before evidence is available?,answerable,IT-003
