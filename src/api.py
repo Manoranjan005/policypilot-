@@ -27,4 +27,5 @@ def policies():
     return [{k: d[k] for k in ("policy_id", "title", "file")} for d in load_policies()]
 
 @app.get("/")
-def home(): return FileResponse("static/index.html")
+def home():
+    return FileResponse(os.path.join(os.path.dirname(__file__), "..", "static", "index.html"))
