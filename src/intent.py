@@ -1,5 +1,5 @@
 """Intent classifier: TF-IDF+LogReg baseline vs TF-IDF+MLP. Reports per-class F1."""
-import json, joblib, pandas as pd
+import json, joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
