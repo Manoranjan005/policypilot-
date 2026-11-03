@@ -1,2 +1,18 @@
+[project]
+name = "policypilot"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "python-dotenv",
+    "openai",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "joblib"
+]
+
 [tool.vercel]
 entrypoint = "src.api:app"
