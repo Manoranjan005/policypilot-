@@ -27,7 +27,7 @@ def train(csv="data/intent_examples.csv", seed=42):
               {k: round(v["f1-score"], 2) for k, v in r.items() if isinstance(v, dict) and k not in ("macro avg", "weighted avg")})
 
 class IntentModel:
-    def __init__(self): self.m = joblib.load(PATH)
+    def __init__(self, path=PATH): self.m = joblib.load(path)
     def predict(self, q):
         p = self.m.predict_proba([q])[0]; i = p.argmax()
         return {"label": str(self.m.classes_[i]), "confidence": round(float(p[i]), 3)}
