@@ -26,9 +26,17 @@ def ask(body: Ask):
     try:
         return answer(body.question, retriever, intent)
     except Exception as e:
+        print("ASK_ERROR", repr(e))
         return dict(question=body.question, answerable=False,
-                    answer="The service could not produce a grounded answer. Please try again or contact IT.",
-                    citations=[], evidence=[], intent=None, reason=f"error:{type(e).__name__}")
+                    answer="Error: " + repr(e)[:300],
+                    citations=[], evidence=[], intent=None, reason="error")
+
+@app.get("/api/health")
+def health():
+    return {"key_set": bool(os.getenv("LLM_API_KEY")),
+            "model": os.getenv("LLM_MODEL"),
+            "chunks": len(retriever.chunks),
+            "intent_loaded": intent is not None}
 
 @app.get("/api/policies")
 def policies():
