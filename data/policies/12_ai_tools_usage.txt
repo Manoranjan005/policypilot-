@@ -1,0 +1,3 @@
+Policy ID: IT-006
+Title: AI Tools Usage (Synthetic Training Policy)
+Use only the company-approved AI assistant for work tasks. Do not enter customer data, source code or credentials into any AI tool. Review AI-generated content for accuracy before using it in client work. Report suspected leaks of confidential data to an AI tool as a security incident. Synthetic training content added by the project team.

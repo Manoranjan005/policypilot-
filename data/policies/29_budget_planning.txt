@@ -1,0 +1,3 @@
+Policy ID: FIN-003
+Title: Budget Planning (Synthetic Training Policy)
+Department budget proposals are submitted to Finance by the end of October for the following year. Budgets are reforecast every quarter. Spending above the approved budget requires a written variance explanation. Unspent budget does not carry over to the next financial year. Synthetic training content added by the project team.

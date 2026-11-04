@@ -1,0 +1,3 @@
+Policy ID: IT-009
+Title: Email and Messaging Use (Synthetic Training Policy)
+Use company email and the approved chat tool for all work communication. Do not use personal email accounts to send company documents. Attachments larger than 25 MB must be shared through the file sharing service instead. Check the sender address of external messages before clicking links or opening attachments. Synthetic training content added by the project team.

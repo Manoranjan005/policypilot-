@@ -1,0 +1,3 @@
+Policy ID: HR-005
+Title: Training and Learning (Synthetic Training Policy)
+Each employee may spend up to five paid working days per year on approved training. Training requests must be approved by the manager before registration. Mandatory security awareness training must be completed within 30 days of joining and renewed every 12 months. Course fees are reimbursed only after a completion certificate is submitted. Synthetic training content added by the project team.

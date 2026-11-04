@@ -1,0 +1,3 @@
+Policy ID: IT-013
+Title: Printing and Physical Document Security (Synthetic Training Policy)
+Collect printed confidential documents from the printer immediately. Use the secure print option that releases jobs only with an access badge. Paper documents containing confidential information must be placed in the locked shredding bins. Do not leave confidential papers on desks overnight. Synthetic training content added by the project team.

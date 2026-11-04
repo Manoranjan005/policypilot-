@@ -1,0 +1,3 @@
+Policy ID: HR-008
+Title: Employee Referral Program (Synthetic Training Policy)
+Employees may refer candidates for open roles through the referral portal. A referral bonus of 500 USD is paid after the referred hire completes 90 days of employment. Employees cannot refer family members who would report to them. Referrals must be submitted before the candidate's first interview. Synthetic training content added by the project team.

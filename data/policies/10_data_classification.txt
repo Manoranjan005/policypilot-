@@ -1,0 +1,3 @@
+Policy ID: IT-004
+Title: Data Classification and Retention (Synthetic Training Policy)
+Classify data as Public, Internal or Confidential before sharing it. Confidential data must be encrypted when stored or sent outside the company network. Customer records are retained for seven years and then securely deleted. Do not keep copies of confidential data on removable media. Synthetic training content added by the project team.

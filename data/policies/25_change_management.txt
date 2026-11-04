@@ -1,0 +1,3 @@
+Policy ID: IT-011
+Title: Change Management (Synthetic Training Policy)
+Changes to production systems require an approved change request before they are made. Each change request must include a rollback plan. Emergency changes may be made without prior approval but must be reviewed within two working days. No routine changes are made during the freeze period in the last week of each quarter. Synthetic training content added by the project team.

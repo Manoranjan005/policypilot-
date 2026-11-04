@@ -1,0 +1,3 @@
+Policy ID: FIN-002
+Title: Invoices and Supplier Payments (Synthetic Training Policy)
+Supplier invoices must quote a valid purchase order number. Approved invoices are paid within 30 days of the invoice date. Invoices without a purchase order number are returned to the supplier. Changes to supplier bank details must be confirmed by phone with a known contact before payment. Synthetic training content added by the project team.

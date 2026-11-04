@@ -1,0 +1,3 @@
+Policy ID: LEG-001
+Title: Intellectual Property and Open Source (Synthetic Training Policy)
+Work created as part of your job belongs to the company. Contributions to open-source projects on company time require written approval from the manager and Legal. Do not copy code or text from other sources without checking its licence. Report suspected licence violations to Legal. Synthetic training content added by the project team.

@@ -1,0 +1,3 @@
+Policy ID: IT-005
+Title: Software and Licensing (Synthetic Training Policy)
+Install only software from the approved software catalogue. Requests for new software are submitted through the IT portal and reviewed within five working days. Do not install pirated or unlicensed software on company devices. Licences for unused software must be returned to IT within 30 days. Synthetic training content added by the project team.

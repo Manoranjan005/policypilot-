@@ -1,0 +1,3 @@
+Policy ID: IT-012
+Title: Vendor and Third-Party Access (Synthetic Training Policy)
+Vendors may access company systems only through an internal sponsor who requests the access. Vendor access expires automatically after 30 days unless renewed. Vendors must sign a confidentiality agreement before receiving any access. Vendor accounts must never be shared between individuals. Synthetic training content added by the project team.

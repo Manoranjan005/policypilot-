@@ -1,0 +1,4 @@
+Policy ID: IT-007
+Title: Security Operations Runbook (Synthetic Training Policy)
+Access Level: restricted
+Incidents are rated P1, P2, P3 or P4 by the Security Operations Center. P1 incidents require an initial response within 15 minutes and P2 incidents within one hour. The on-call analyst must notify the support lead within 30 minutes of a P1 rating. Incident logs are retained for 180 days for investigation. Synthetic training content added by the project team.

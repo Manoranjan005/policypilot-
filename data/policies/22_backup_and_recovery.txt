@@ -1,0 +1,3 @@
+Policy ID: IT-008
+Title: Backup and Recovery (Synthetic Training Policy)
+Shared file servers are backed up automatically every night. Backups are kept for 35 days. Requests to restore a deleted file must be submitted through the IT portal and are handled within two working days. Do not keep the only copy of important work on a local laptop disk. Synthetic training content added by the project team.

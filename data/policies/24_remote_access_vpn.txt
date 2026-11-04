@@ -1,0 +1,3 @@
+Policy ID: IT-010
+Title: Remote Access and VPN (Synthetic Training Policy)
+The company VPN must be switched on whenever internal systems are accessed from outside the office. VPN sessions end automatically after 12 hours and must be reconnected. Do not share VPN configuration files with anyone. Report VPN connection problems to the IT portal before trying workarounds. Synthetic training content added by the project team.
