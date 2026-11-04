@@ -1,0 +1,3 @@
+Policy ID: IT-016
+Title: Sharing Confidential Documents Externally (Synthetic Training Policy)
+Confidential documents may be shared with external parties only after a signed non-disclosure agreement is in place. The manager must approve each external sharing request in writing. Use the approved file sharing service and set an expiry date on the link. Never send confidential documents to personal email addresses. Report any accidental external sharing as a security incident. Synthetic training content added by the project team.

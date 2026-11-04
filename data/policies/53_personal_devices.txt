@@ -1,0 +1,3 @@
+Policy ID: IT-015
+Title: Personal Devices at Work (Synthetic Training Policy)
+Personal devices may be used for company email and chat only through the approved mobile app. The device must have a screen lock and an up-to-date operating system. Company files must not be saved on personal devices. The company can remotely wipe company data from a personal device that is lost or no longer used for work. Report a lost personal device used for work within 24 hours. Synthetic training content added by the project team.

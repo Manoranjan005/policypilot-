@@ -1,0 +1,3 @@
+Policy ID: HR-031
+Title: Attendance and Punctuality (Synthetic Training Policy)
+Standard working hours are 09:00 to 18:00, with core hours from 10:00 to 16:00 when everyone should be available. Arriving more than 15 minutes after the start time counts as a late arrival. Three late arrivals in one calendar month lead to a discussion with the manager. Late arrivals caused by transport disruption are excused when reported to the manager. Synthetic training content added by the project team.

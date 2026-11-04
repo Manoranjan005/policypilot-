@@ -1,0 +1,3 @@
+Policy ID: HR-014
+Title: Equal Opportunity in Hiring (Synthetic Training Policy)
+Hiring decisions are based only on skills, experience and fit with the published role requirements. Origin, nationality, religion, race, gender and age must not influence any hiring decision. Interview questions about family plans or health are not allowed. Any employee who notices a biased hiring practice should report it to HR. Synthetic training content added by the project team.

@@ -1,0 +1,3 @@
+Policy ID: HR-023
+Title: Individual Development Plans and E-Learning (Synthetic Training Policy)
+Each employee agrees a development plan with their manager once a year. Training is chosen to build skills named in the plan and is not a reward. E-learning modules are available on the learning portal at any time. Language courses are supported when they are linked to the employee's role. The manager reviews the progress against the plan after each training programme. Synthetic training content added by the project team.

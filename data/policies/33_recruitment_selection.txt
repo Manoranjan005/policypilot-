@@ -1,0 +1,3 @@
+Policy ID: HR-015
+Title: Recruitment and Selection (Synthetic Training Policy)
+Every open role is advertised internally for at least seven days before it is advertised externally. Each shortlist is interviewed by a panel of at least two people. The final hiring decision is made by the hiring manager with HR support and is never delegated to an external agency. Every interviewed candidate receives feedback within ten working days of the final interview. Synthetic training content added by the project team.

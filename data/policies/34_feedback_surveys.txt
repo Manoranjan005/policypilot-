@@ -1,0 +1,3 @@
+Policy ID: HR-016
+Title: Employee Feedback Surveys (Synthetic Training Policy)
+An anonymous engagement survey is run once a year. Survey results are shared with all employees within 30 days of the survey closing. Each manager must hold a team session to discuss the results and agree on at least two follow-up actions. Individual survey answers are never shown to managers. Synthetic training content added by the project team.

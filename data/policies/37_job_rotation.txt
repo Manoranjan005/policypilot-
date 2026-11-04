@@ -1,0 +1,3 @@
+Policy ID: HR-019
+Title: Job Rotation and Internal Mobility (Synthetic Training Policy)
+Employees can ask for a rotation to another team after at least 18 months in their current role. Rotations last between six and twelve months. Both the current and the receiving manager must agree to the rotation in writing. Rotation must not leave a critical area without an experienced person. Synthetic training content added by the project team.

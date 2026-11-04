@@ -1,0 +1,3 @@
+Policy ID: HR-029
+Title: Sick Leave (Synthetic Training Policy)
+Employees receive 12 paid sick days per year. Tell your manager before your working day starts if you are too ill to work. A medical certificate is required after three consecutive sick days. Sick days do not reduce annual leave. Unused sick days are not carried forward. Synthetic training content added by the project team.
