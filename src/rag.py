@@ -15,7 +15,10 @@ def answer(question, retriever, intent_model=None, k=4):
     t0 = time.time()
     thr = float(os.getenv("ABSTAIN_THRESHOLD", "0.30"))
     hits = retriever.search(question, k)
+    try:
     intent = intent_model.predict(question) if intent_model else None
+except Exception:
+    intent = None  # e.g. scikit-learn version mismatch; answers still work
     res = dict(question=question, intent=intent, evidence=hits, answerable=False,
                answer=ABSTAIN, citations=[], reason="low_retrieval_score")
     if hits and hits[0]["score"] >= thr:
