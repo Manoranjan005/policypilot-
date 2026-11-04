@@ -15,13 +15,21 @@ def answer(question, retriever, intent_model=None, k=4):
     t0 = time.time()
     thr = float(os.getenv("ABSTAIN_THRESHOLD", "0.30"))
     hits = retriever.search(question, k)
-    intent = intent_model.predict(question) if intent_model else None
+    try:
+        intent = intent_model.predict(question) if intent_model else None
+    except Exception:
+        intent = None
     res = dict(question=question, intent=intent, evidence=hits, answerable=False,
                answer=ABSTAIN, citations=[], reason="low_retrieval_score")
     if hits and hits[0]["score"] >= thr:
         ev = "\n".join(f"[{h['policy_id']}] {h['text']}" for h in hits)
-        out = llm.chat_json([{"role": "system", "content": SYSTEM},
-                             {"role": "user", "content": f"EVIDENCE:\n{ev}\n\nQUESTION: {question}"}])
+        try:
+            out = llm.chat_json([{"role": "system", "content": SYSTEM},
+                                 {"role": "user", "content": f"EVIDENCE:\n{ev}\n\nQUESTION: {question}"}])
+        except Exception as e:
+            res["answer"] = "LLM error: " + repr(e)[:250]
+            res["reason"] = "llm_error"
+            return res
         valid = {h["policy_id"] for h in hits}
         cites = [c for c in out.get("citations", []) if c in valid]
         if out.get("answerable") and cites:
