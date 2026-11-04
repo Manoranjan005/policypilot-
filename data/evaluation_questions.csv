@@ -1,0 +1,158 @@
+id,question,type,answerable,expected_policy_id,expected_keywords,intent,source,corpus
+Q001,How early should planned leave be submitted?,direct,yes,HR-001,three working days,leave,starter,core
+Q002,What should I do if I suspect an API key was exposed?,direct,yes,IT-001,IT contact|rotate,credentials,starter,core
+Q003,Can I copy confidential files to personal storage while working remotely?,direct,yes,HR-002,must not be copied,remote_work,starter,core
+Q004,What details should be included in an incident report?,direct,yes,IT-003,time observed|affected system|business impact,incidents,starter,core
+Q005,What is the company's maternity leave entitlement?,unanswerable,no,,,leave,starter,core
+Q006,What is the annual reimbursement cap?,unanswerable,no,,,expenses,starter,core
+Q007,What should I do if I lose a device?,direct,yes,IT-002,lost devices,device_security,starter,core
+Q008,Can I purchase equipment before approval?,direct,yes,HR-003,approval must be obtained,expenses,starter,core
+Q009,What is the exact legal notice period for resignation?,unanswerable,no,,,out_of_scope,starter,core
+Q010,Should I guess the cause of an IT incident before evidence is available?,direct,yes,IT-003,avoid guessing,incidents,starter,core
+Q011,Who approves leave requests?,direct,yes,HR-001,manager review,leave,extended,core
+Q012,How soon must attendance corrections be reported?,direct,yes,HR-001,two working days,leave,extended,core
+Q013,Who should I tell about emergency leave?,direct,yes,HR-001,manager,leave,extended,core
+Q014,What does leave approval depend on?,direct,yes,HR-001,team coverage,leave,extended,core
+Q015,Do I need to agree my working hours with my manager when working remotely?,direct,yes,HR-002,working hours,remote_work,extended,core
+Q016,What devices should be used for remote work?,direct,yes,HR-002,company-approved devices,remote_work,extended,core
+Q017,How are remote-work exceptions handled?,direct,yes,HR-002,documented|reviewed,remote_work,extended,core
+Q018,Is multi-factor authentication required?,direct,yes,IT-001,multi-factor authentication,credentials,extended,core
+Q019,Can I share my password with a colleague?,direct,yes,IT-001,never share,credentials,extended,core
+Q020,Where should I store secrets?,direct,yes,IT-001,secrets manager,credentials,extended,core
+Q021,Can I commit API keys to Git?,direct,yes,IT-001,do not commit,credentials,extended,core
+Q022,Who do I report suspected credential exposure to?,direct,yes,IT-001,IT contact,credentials,extended,core
+Q023,When should I lock my laptop?,direct,yes,IT-002,unattended,device_security,extended,core
+Q024,How should I install updates?,direct,yes,IT-002,approved processes,device_security,extended,core
+Q025,Can I upload confidential information to public AI tools?,direct,yes,IT-002|IT-006,AI tool,data_privacy,extended,core
+Q026,Where should company files be stored?,direct,yes,IT-002,approved storage,device_security,extended,core
+Q027,Should I preserve logs during an incident?,direct,yes,IT-003,preserve,incidents,extended,core
+Q028,Who do I escalate urgent interruptions to?,direct,yes,IT-003,support lead,incidents,extended,core
+Q029,What should be documented after an incident is resolved?,direct,yes,IT-003,corrective and preventive,incidents,extended,core
+Q030,What information is needed for a purchase request?,direct,yes,HR-003,business purpose|cost center,expenses,extended,core
+Q031,Do purchase requests need supporting documents?,direct,yes,HR-003,supporting documents,expenses,extended,core
+Q032,When is reimbursement approved?,direct,yes,HR-003,documentation,expenses,extended,core
+Q033,Which cost information must an expense request include?,direct,yes,HR-003,estimated amount,expenses,extended,core
+Q034,How many working days ahead must I request a vacation?,paraphrase,yes,HR-001,three working days,leave,extended,core
+Q035,"I'm unwell and can't come in tomorrow, what do I do?",paraphrase,yes,HR-001,as soon as practical,leave,extended,core
+Q036,"My timesheet entry is wrong, how long do I have to fix it?",paraphrase,yes,HR-001,two working days,leave,extended,core
+Q037,Am I allowed to save work documents on my personal Dropbox when I work from home?,paraphrase,yes,HR-002,personal storage,remote_work,extended,core
+Q038,Can I use my own laptop for working from home?,paraphrase,yes,HR-002,company-approved devices,remote_work,extended,core
+Q039,"I think someone stole my login token, what now?",paraphrase,yes,IT-001,IT contact,credentials,extended,core
+Q040,"My phone was stolen, who do I tell?",paraphrase,yes,IT-002,lost devices,device_security,extended,core
+Q041,Is it okay to paste customer data into an AI chatbot?,paraphrase,yes,IT-002|IT-006,AI tool,data_privacy,extended,core
+Q042,What should I write in a ticket when the server goes down?,paraphrase,yes,IT-003,affected system,incidents,extended,core
+Q043,Can I buy a laptop first and get sign-off later?,paraphrase,yes,HR-003,approval must be obtained,expenses,extended,core
+Q044,What paperwork is needed to get my money back?,paraphrase,yes,HR-003,documentation,expenses,extended,core
+Q045,Should I work out why the outage happened before I report it?,paraphrase,yes,IT-003,avoid guessing,incidents,extended,core
+Q046,What should I do if I lose something?,ambiguous,yes,IT-002,lost devices,device_security,extended,core
+Q047,Can I use personal storage?,ambiguous,yes,HR-002|IT-002,storage,remote_work,extended,core
+Q048,Who do I report to?,ambiguous,no,,,out_of_scope,extended,core
+Q049,Do I need approval?,ambiguous,no,,,out_of_scope,extended,core
+Q050,What should I report?,ambiguous,no,,,out_of_scope,extended,core
+Q051,What is the deadline?,ambiguous,no,,,out_of_scope,extended,core
+Q052,How long do I have?,ambiguous,no,,,out_of_scope,extended,core
+Q053,How many vacation days do I get per year?,unanswerable,no,,,leave,extended,core
+Q054,How many sick days am I entitled to?,unanswerable,no,,,leave,extended,core
+Q055,Can I carry unused leave over to next year?,unanswerable,no,,,leave,extended,core
+Q056,Is paternity leave paid?,unanswerable,no,,,leave,extended,core
+Q057,What is the minimum password length?,unanswerable,no,,,credentials,extended,core
+Q058,How often must I change my password?,unanswerable,no,,,credentials,extended,core
+Q059,What is the phone number of the designated IT contact?,unanswerable,no,,,credentials,extended,core
+Q060,What is the maximum amount I can spend without approval?,unanswerable,no,,,expenses,extended,core
+Q061,What is the daily meal allowance on business trips?,unanswerable,no,,,expenses,extended,core
+Q062,How many days per week can I work from home?,unanswerable,no,,,remote_work,extended,core
+Q063,What are the core working hours?,unanswerable,no,,,remote_work,extended,core
+Q064,How long are incident logs retained?,unanswerable,no,,,incidents,extended,core
+Q065,What are the severity levels for incidents?,unanswerable,no,,,incidents,extended,core
+Q066,Which antivirus software does the company use?,unanswerable,no,,,device_security,extended,core
+Q067,What is the dress code?,unanswerable,no,,,out_of_scope,extended,core
+Q068,What is the company stock option vesting schedule?,unanswerable,no,,,out_of_scope,extended,core
+Q069,How do I apply for a promotion?,unanswerable,no,,,out_of_scope,extended,core
+Q070,Who is the CEO of the company?,unanswerable,no,,,out_of_scope,extended,core
+Q071,What is the weather in Chennai today?,unanswerable,no,,,out_of_scope,extended,core
+Q072,Tell me a joke about HR.,unanswerable,no,,,out_of_scope,extended,core
+Q073,What is the Wi-Fi guest network name?,unanswerable,no,,,out_of_scope,extended,core
+Q074,What is the notice period for ending my employment?,unanswerable,no,,,out_of_scope,extended,core
+Q075,How should I report emergency leave?,direct,yes,HR-001,as soon as practical,leave,extended,core
+Q076,Does team coverage matter when leave is approved?,paraphrase,yes,HR-001,team coverage,leave,extended,core
+Q077,Whom do I report attendance corrections to?,direct,yes,HR-001,project coordinator,leave,extended,core
+Q078,Do I need secure network access when I work from home?,direct,yes,HR-002,secure network access,remote_work,extended,core
+Q079,Do I have to be reachable during agreed hours when working remotely?,paraphrase,yes,HR-002,availability,remote_work,extended,core
+Q080,Can I give my recovery code to IT support?,paraphrase,yes,IT-001,never share,credentials,extended,core
+Q081,Where should API keys be kept?,direct,yes,IT-001,secrets manager,credentials,extended,core
+Q082,What should I do before walking away from my laptop?,paraphrase,yes,IT-002,lock devices,device_security,extended,core
+Q083,Can I install updates from any website?,paraphrase,yes,IT-002,approved processes,device_security,extended,core
+Q084,Should I keep logs when something breaks?,paraphrase,yes,IT-003,preserve relevant logs,incidents,extended,core
+Q085,Do I have to name the root cause in my incident report?,paraphrase,yes,IT-003,evidence,incidents,extended,core
+Q086,Is a business purpose required for purchase requests?,direct,yes,HR-003,business purpose,expenses,extended,core
+Q087,Can I get reimbursed without handing in documents?,paraphrase,yes,HR-003,complete documentation,expenses,extended,core
+Q088,How many days of leave can I take in one go?,unanswerable,no,,,leave,extended,core
+Q089,What happens if I miss the attendance correction deadline?,unanswerable,no,,,leave,extended,core
+Q090,Can I work remotely from another country?,unanswerable,no,,,remote_work,extended,core
+Q091,Do I need a hardware security key for multi-factor authentication?,unanswerable,no,,,credentials,extended,core
+Q092,Can I use my personal phone for work email?,unanswerable,no,,,device_security,extended,core
+Q093,How much will I be reimbursed for a taxi ride?,unanswerable,no,,,expenses,extended,core
+Q094,What is the phone number for urgent escalations?,unanswerable,no,,,incidents,extended,core
+Q095,Who is the designated support lead?,unanswerable,no,,,incidents,extended,core
+Q096,What is the capital of France?,unanswerable,no,,,out_of_scope,extended,core
+Q097,Write a Python function that sorts a list.,unanswerable,no,,,out_of_scope,extended,core
+Q098,Which laptop is best for programming?,unanswerable,no,,,out_of_scope,extended,core
+Q099,How do I book a meeting room?,unanswerable,no,,,out_of_scope,extended,core
+Q100,What is my salary band?,unanswerable,no,,,out_of_scope,extended,core
+Q101,What happens if I lose my company card or laptop?,ambiguous,no,,,out_of_scope,extended,core
+Q102,Can I use an AI tool with customer data?,ambiguous,yes,IT-002|IT-006,AI tool,data_privacy,extended,core
+Q103,How many days do I have to report?,ambiguous,no,,,out_of_scope,extended,core
+Q104,What is the limit for accepting gifts from vendors?,direct,yes,HR-004,50 USD,workplace,extended,extra
+Q105,Who do I report harassment to?,direct,yes,HR-004,HR contact,workplace,extended,extra
+Q106,How soon must conduct concerns be reported?,direct,yes,HR-004,five working days,workplace,extended,extra
+Q107,What should I do about a conflict of interest?,direct,yes,HR-004,conflict of interest,workplace,extended,extra
+Q108,"A supplier sent me an expensive hamper, can I keep it?",paraphrase,yes,HR-004,written manager approval,workplace,extended,extra
+Q109,How many paid days can I use for training each year?,direct,yes,HR-005,five paid working days,training,extended,extra
+Q110,Who approves training requests?,direct,yes,HR-005,approved by the manager,training,extended,extra
+Q111,When must security awareness training be completed after joining?,direct,yes,HR-005,30 days,training,extended,extra
+Q112,How often must security awareness training be renewed?,direct,yes,HR-005,12 months,training,extended,extra
+Q113,When are course fees reimbursed?,direct,yes,HR-005,completion certificate,training,extended,extra
+Q114,"I want to attend a conference next month, what do I need before booking?",paraphrase,yes,HR-005,approved by the manager,training,extended,extra
+Q115,Do I get my course money back?,paraphrase,yes,HR-005,completion certificate,training,extended,extra
+Q116,How soon must I report a workplace injury?,direct,yes,HR-006,24 hours,workplace,extended,extra
+Q117,Who do I tell about an unsafe condition?,direct,yes,HR-006,safety officer,workplace,extended,extra
+Q118,How long does it take to arrange an ergonomic assessment?,direct,yes,HR-006,ten working days,workplace,extended,extra
+Q119,Can I block a fire exit?,direct,yes,HR-006,fire exits,workplace,extended,extra
+Q120,"I tripped over a cable and hurt my ankle, what should I do?",paraphrase,yes,HR-006,safety officer,workplace,extended,extra
+Q121,"My back hurts from my chair, can someone check my desk setup?",paraphrase,yes,HR-006,ergonomic assessments,workplace,extended,extra
+Q122,What are the data classification levels?,direct,yes,IT-004,"Public, Internal or Confidential",data_privacy,extended,extra
+Q123,Does confidential data need to be encrypted?,direct,yes,IT-004,encrypted,data_privacy,extended,extra
+Q124,How long are customer records retained?,direct,yes,IT-004,seven years,data_privacy,extended,extra
+Q125,Can I copy confidential data to a USB drive?,paraphrase,yes,IT-004,removable media,data_privacy,extended,extra
+Q126,How long do we keep client files before deleting them?,paraphrase,yes,IT-004,seven years,data_privacy,extended,extra
+Q127,Do I have to label documents before I share them?,paraphrase,yes,IT-004,classify,data_privacy,extended,extra
+Q128,Where can I install software from?,direct,yes,IT-005,approved software catalogue,device_security,extended,extra
+Q129,How long does a new software request take to review?,direct,yes,IT-005,five working days,device_security,extended,extra
+Q130,Can I install unlicensed software?,direct,yes,IT-005,unlicensed software,device_security,extended,extra
+Q131,When must unused licences be returned?,direct,yes,IT-005,30 days,device_security,extended,extra
+Q132,"I need a tool that is not in the list, how do I ask for it?",paraphrase,yes,IT-005,IT portal,device_security,extended,extra
+Q133,Can I download a cracked version of a design program?,paraphrase,yes,IT-005,pirated or unlicensed,device_security,extended,extra
+Q134,Which AI assistant can I use for work?,direct,yes,IT-006,company-approved AI assistant,data_privacy,extended,extra
+Q135,Can I enter source code into an AI tool?,direct,yes,IT-006,source code,data_privacy,extended,extra
+Q136,Should I check AI-generated content before using it?,direct,yes,IT-006,accuracy,data_privacy,extended,extra
+Q137,What should I do if confidential data leaks into an AI tool?,direct,yes,IT-006,security incident,data_privacy,extended,extra
+Q138,Can I use an AI chatbot to draft client emails?,paraphrase,yes,IT-006,accuracy,data_privacy,extended,extra
+Q139,What can the corporate card be used for?,direct,yes,FIN-001,business expenses only,expenses,extended,extra
+Q140,When must card statements be reconciled?,direct,yes,FIN-001,ten working days,expenses,extended,extra
+Q141,Who do I tell if my corporate card is lost?,direct,yes,FIN-001,Finance,expenses,extended,extra
+Q142,Can I withdraw cash with the corporate card?,direct,yes,FIN-001,not permitted,expenses,extended,extra
+Q143,Can I use the company card to buy a gift for my family?,paraphrase,yes,FIN-001,personal purchases,expenses,extended,extra
+Q144,"My company card was stolen, what now?",paraphrase,yes,FIN-001,blocked,expenses,extended,extra
+Q145,How quickly must the SOC respond to a P1 incident?,restricted,no,,,incidents,extended,extra
+Q146,Who must the on-call analyst notify for a P1 rating?,restricted,no,,,incidents,extended,extra
+Q147,How many days are incident logs kept for investigation?,restricted,no,,,incidents,extended,extra
+Q148,How many gifts can I accept per year?,unanswerable,no,,,workplace,extended,extra
+Q149,What is my annual training budget in dollars?,unanswerable,no,,,training,extended,extra
+Q150,Who is the safety officer?,unanswerable,no,,,workplace,extended,extra
+Q151,How often are fire drills held?,unanswerable,no,,,workplace,extended,extra
+Q152,How long are emails retained?,unanswerable,no,,,data_privacy,extended,extra
+Q153,What is the classification of salary records?,unanswerable,no,,,data_privacy,extended,extra
+Q154,What is the spending limit per card transaction?,unanswerable,no,,,expenses,extended,extra
+Q155,How much does a software licence cost?,unanswerable,no,,,device_security,extended,extra
+Q156,"Which AI assistant is approved, by product name?",unanswerable,no,,,data_privacy,extended,extra
+Q157,Can I take unpaid leave to attend a course?,unanswerable,no,,,training,extended,extra
