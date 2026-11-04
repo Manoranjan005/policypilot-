@@ -15,15 +15,6 @@ def answer(question, retriever, intent_model=None, k=4):
     t0 = time.time()
     thr = float(os.getenv("ABSTAIN_THRESHOLD", "0.30"))
     hits = retriever.search(question, k)
-    top = hits[0]["score"] if hits else 0
-    seen, kept = set(), []
-    for h in hits:
-       if h["policy_id"] in seen:
-           continue  # skip overlapping chunks from the same policy
-       if h["score"] >= max(thr * 0.5, top * 0.4):
-           kept.append(h)
-           seen.add(h["policy_id"])
-     hits = kept
     try:
         intent = intent_model.predict(question) if intent_model else None
     except Exception:
