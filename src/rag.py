@@ -11,17 +11,31 @@ Return JSON: {"answerable": bool, "answer": "short answer with [ID] citations", 
 ABSTAIN = ("The policy corpus does not answer this question, so I can't determine the answer. "
            "I'm routing it to a human (HR/IT) for review.")
 
-def answer(question, retriever, intent_model=None, k=4):
+MAX_EVIDENCE = 2  # number of policies shown and sent to the LLM
+
+def answer(question, retriever, intent_model=None, k=6):
     t0 = time.time()
     thr = float(os.getenv("ABSTAIN_THRESHOLD", "0.30"))
-    hits = retriever.search(question, k)
+    raw = retriever.search(question, k)
+
+    # keep one chunk per policy, drop weak matches, then cap the list
+    top = raw[0]["score"] if raw else 0
+    seen, hits = set(), []
+    for h in raw:
+        if h["policy_id"] in seen:
+            continue
+        if h["score"] >= max(thr * 0.5, top * 0.4):
+            hits.append(h)
+            seen.add(h["policy_id"])
+    hits = hits[:MAX_EVIDENCE]
+
     try:
         intent = intent_model.predict(question) if intent_model else None
     except Exception:
         intent = None
     res = dict(question=question, intent=intent, evidence=hits, answerable=False,
                answer=ABSTAIN, citations=[], reason="low_retrieval_score")
-    if hits and hits[0]["score"] >= thr:
+    if hits and top >= thr:
         ev = "\n".join(f"[{h['policy_id']}] {h['text']}" for h in hits)
         try:
             out = llm.chat_json([{"role": "system", "content": SYSTEM},
