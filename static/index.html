@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PolicyPilot</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1220'/%3E%3Cpath d='M20 46V18h15a10 10 0 0 1 0 20H27' fill='none' stroke='%2345d6c4' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='47' cy='47' r='4' fill='%23ffb454'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f6fb;--surface:#ffffffcc;--solid:#fff;--ink:#0d1b2e;--mute:#5b6b80;--line:#dbe3ee;--brand:#0f9d8f;--brand2:#4f6bff;--brand-soft:#e0f6f3;--warn:#b86e00;--warn-soft:#fff2dc;--shadow:0 10px 40px -12px #1b2f5a2e;--glow1:#4f6bff26;--glow2:#0f9d8f26;--glow3:#ffb45426}
+@media(prefers-color-scheme:dark){:root[data-theme=auto]{--bg:#080e1a;--surface:#111b2dcc;--solid:#111b2d;--ink:#eaf0fa;--mute:#93a3bb;--line:#223250;--brand:#45d6c4;--brand2:#8ea2ff;--brand-soft:#0f2f33;--warn:#ffb454;--warn-soft:#33260f;--shadow:0 10px 40px -12px #000a;--glow1:#4f6bff30;--glow2:#45d6c424;--glow3:#ffb45414}}
+:root[data-theme=dark]{--bg:#080e1a;--surface:#111b2dcc;--solid:#111b2d;--ink:#eaf0fa;--mute:#93a3bb;--line:#223250;--brand:#45d6c4;--brand2:#8ea2ff;--brand-soft:#0f2f33;--warn:#ffb454;--warn-soft:#33260f;--shadow:0 10px 40px -12px #000a;--glow1:#4f6bff30;--glow2:#45d6c424;--glow3:#ffb45414}
+*{box-sizing:border-box}html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:400 15px/1.6 Inter,system-ui,sans-serif;min-height:100vh;
+background-image:radial-gradient(60% 50% at 12% 0%,var(--glow1),transparent 70%),radial-gradient(50% 45% at 95% 10%,var(--glow2),transparent 70%),radial-gradient(40% 40% at 60% 100%,var(--glow3),transparent 70%);background-attachment:fixed}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px 150px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.logo{display:flex;align-items:center;gap:12px;font:800 20px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}
+.mark{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#fff;font:800 20px 'Bricolage Grotesque';box-shadow:0 6px 18px -4px var(--brand2)}
+.right{display:flex;gap:10px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--surface);backdrop-filter:blur(10px);border-radius:99px;padding:5px 12px;font:500 12.5px Inter;color:var(--mute)}
+.dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px #22c55e30}
+.icon-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:15px}
+.hero{padding:42px 0 10px;text-align:center}
+.hero h1{font:800 clamp(34px,6vw,58px)/1.04 'Bricolage Grotesque',sans-serif;letter-spacing:-.035em;margin:0 0 14px}
+.hero h1 span{background:linear-gradient(100deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mute);max-width:54ch;margin:0 auto 34px;font-size:16.5px}
+.topics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.topic{display:flex;gap:12px;align-items:center;text-align:left;background:var(--surface);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:16px;padding:14px 16px;color:inherit;font:inherit;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.topic:hover{transform:translateY(-3px);border-color:var(--brand);box-shadow:var(--shadow)}
+.topic i{font-style:normal;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:18px;background:var(--brand-soft);color:var(--brand);flex:none}
+.topic b{display:block;font:600 14px Inter}.topic small{color:var(--mute);font-size:12.5px;line-height:1.35;display:block}
+.try{margin-top:16px;color:var(--mute);font-size:13px;text-align:center}
+.try button{background:none;border:0;color:var(--warn);font:inherit;text-decoration:underline;cursor:pointer}
+#thread{display:flex;flex-direction:column;gap:22px;margin-top:10px}
+.u{align-self:flex-end;max-width:80%;background:linear-gradient(135deg,var(--brand2),var(--brand));color:#fff;padding:11px 17px;border-radius:20px 20px 4px 20px;box-shadow:var(--shadow);animation:rise .35s both}
+.card{background:var(--surface);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:22px;padding:22px 24px;box-shadow:var(--shadow);animation:rise .4s both}
+.card.no{border-color:var(--warn);background:linear-gradient(var(--warn-soft),var(--warn-soft)),var(--solid)}
+.head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.badge{display:inline-flex;gap:7px;align-items:center;font:600 12.5px Inter;color:var(--brand);background:var(--brand-soft);border-radius:99px;padding:4px 12px}
+.no .badge{color:var(--warn);background:#ffb45422}
+.intent{font:500 12.5px Inter;color:var(--mute);display:flex;align-items:center;gap:8px}
+.meter{width:54px;height:5px;border-radius:3px;background:var(--line);overflow:hidden}.meter i{display:block;height:100%;background:linear-gradient(90deg,var(--brand2),var(--brand))}
+.ans{font:500 clamp(18px,2.6vw,21px)/1.5 'Bricolage Grotesque',sans-serif;letter-spacing:-.01em;margin:0}
+.cite{font:600 11.5px Inter;background:var(--brand-soft);color:var(--brand);border-radius:6px;padding:2px 7px;margin-left:4px;white-space:nowrap}
+.src{margin-top:20px;border-top:1px dashed var(--line);padding-top:14px}
+.src h4{margin:0 0 10px;font:600 11.5px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.s{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:start;padding:10px 12px;border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:var(--solid)}
+.s.used{border-color:var(--brand)}
+.sid{font:700 12px Inter;background:linear-gradient(135deg,var(--brand2),var(--brand));color:#fff;border-radius:8px;padding:4px 9px}
+.s p{margin:0;font-size:13.5px;color:var(--mute)}.s strong{font:600 13px Inter;display:block;color:var(--ink)}
+.sc{font:600 12px Inter;color:var(--mute);text-align:right}
+.foot{display:flex;gap:8px;margin-top:14px}
+.ghost{background:none;border:1px solid var(--line);color:var(--mute);border-radius:99px;padding:4px 12px;font:500 12px Inter;cursor:pointer}.ghost:hover{color:var(--ink);border-color:var(--brand)}
+.typing{display:flex;gap:6px;padding:18px 22px}.typing i{width:8px;height:8px;border-radius:50%;background:var(--brand);animation:b 1s infinite}.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes b{0%,80%,100%{opacity:.25;transform:scale(.8)}40%{opacity:1;transform:scale(1.1)}}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:14px 20px 18px;background:linear-gradient(transparent,var(--bg) 40%)}
+form{max-width:860px;margin:0 auto;display:flex;gap:10px;background:var(--surface);backdrop-filter:blur(16px);border:1.5px solid var(--line);border-radius:20px;padding:8px;box-shadow:var(--shadow);transition:border-color .2s}
+form:focus-within{border-color:var(--brand)}
+input{flex:1;background:none;border:0;color:var(--ink);font:inherit;font-size:16px;padding:10px 12px;outline:0;min-width:0}
+.send{border:0;border-radius:14px;padding:0 22px;background:linear-gradient(135deg,var(--brand2),var(--brand));color:#fff;font:600 14px Inter;cursor:pointer}.send:disabled{opacity:.5}
+.note{max-width:860px;margin:8px auto 0;text-align:center;font-size:11.5px;color:var(--mute)}
+@media(max-width:700px){.topics{grid-template-columns:1fr 1fr}.u{max-width:92%}.pill.hide{display:none}}
+@media(max-width:440px){.topics{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+:focus-visible{outline:3px solid var(--brand2);outline-offset:2px}
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo"><div class="mark">P</div>PolicyPilot</div>
+<div class="right"><span class="pill hide"><span class="dot"></span>Grounded mode · answers only from policy</span><button class="icon-btn" id="theme" aria-label="Toggle theme">◐</button></div></nav>
+<section class="hero" id="hero">
+<h1>Policy answers you can <span>actually trust.</span></h1>
+<p>Ask about HR and IT policies. Every answer is cited to its source, and if the policies don’t cover it, PolicyPilot says so instead of guessing.</p>
+<div class="topics" id="topics"></div>
+<div class="try">Or test the guardrail: <button data-q="What is the company’s maternity leave entitlement?">ask something the policies don’t cover</button></div>
+</section>
+<div id="thread" aria-live="polite"></div>
+</div>
+<div class="bar"><form id="f"><input id="q" placeholder="Ask a policy question…" maxlength="500" required aria-label="Your question" autocomplete="off"><button class="send" id="b">Ask</button></form>
+<div class="note">Synthetic training policies · not legal or real company guidance · questions are not stored</div></div>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const T=[["◷","Leave & attendance","How early should planned leave be submitted?"],["⌂","Remote work","Can I copy confidential files to personal storage?"],["⚿","Passwords & MFA","What should I do if an API key is exposed?"],["▣","Device security","What should I do if I lose my work laptop?"],["⚑","Incident reporting","What details go in an incident report?"],["＄","Expenses & purchases","Can I purchase equipment before approval?"]];
+$("#topics").innerHTML=T.map(t=>`<button class="topic" data-q="${esc(t[2])}"><i>${t[0]}</i><span><b>${t[1]}</b><small>${esc(t[2])}</small></span></button>`).join("");
+document.addEventListener("click",e=>{const b=e.target.closest("[data-q]");if(b){$("#q").value=b.dataset.q;$("#f").requestSubmit()}});
+$("#theme").onclick=()=>{const r=document.documentElement,d=r.dataset.theme==="dark"||(r.dataset.theme==="auto"&&matchMedia("(prefers-color-scheme:dark)").matches);r.dataset.theme=d?"light":"dark"};
+$("#f").onsubmit=async e=>{e.preventDefault();const q=$("#q").value.trim();if(!q)return;$("#q").value="";$("#b").disabled=true;$("#hero").style.display="none";
+ const th=$("#thread");th.insertAdjacentHTML("beforeend",`<div class="u">${esc(q)}</div>`);
+ th.insertAdjacentHTML("beforeend",'<div class="card" id="ld"><div class="typing"><i></i><i></i><i></i></div></div>');scrollTo({top:document.body.scrollHeight,behavior:"smooth"});
+ let r;try{r=await(await fetch("/api/ask",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({question:q})})).json()}
+ catch{r={answerable:false,answer:"Something went wrong. Please try again.",citations:[],evidence:[],intent:null}}
+ $("#ld").remove();th.insertAdjacentHTML("beforeend",card(r));$("#b").disabled=false;scrollTo({top:document.body.scrollHeight,behavior:"smooth"})};
+function card(r){const ok=r.answerable,plain=r.answer;
+ const txt=esc(r.answer).replace(/\[([A-Z]+-\d+)\]/g,'<span class="cite">$1</span>')+(ok?r.citations.map(c=>`<span class="cite">${c}</span>`).join(""):"");
+ const it=r.intent?`<span class="intent">${esc(r.intent.label.replace(/_/g," "))}<span class="meter"><i style="width:${Math.round(r.intent.confidence*100)}%"></i></span>${Math.round(r.intent.confidence*100)}%</span>`:"";
+ const ev=(r.evidence||[]).map(h=>`<div class="s ${r.citations.includes(h.policy_id)?"used":""}"><span class="sid">${esc(h.policy_id)}</span><div><strong>${esc((h.title||"").replace(/ \(.*\)/,""))}</strong><p>${esc(h.text)}</p></div><span class="sc">${Math.round(h.score*100)}%<br>match</span></div>`).join("");
+ return `<div class="card ${ok?"":"no"}"><div class="head"><span class="badge">${ok?"✓ Grounded in policy":"! Not covered by policy"}</span>${it}</div><p class="ans">${txt}</p>
+ ${ev?`<div class="src"><h4>Sources</h4>${ev}</div>`:""}<div class="foot"><button class="ghost" onclick="navigator.clipboard.writeText(this.closest('.card').querySelector('.ans').innerText);this.textContent='Copied ✓'">Copy answer</button></div></div>`}
+</script></body></html>
