@@ -1,0 +1,3 @@
+Policy ID: FIN-004
+Title: Business Travel Expenses (Synthetic Training Policy)
+Business travel must be approved by the manager before anything is booked. Book flights and hotels through the company travel portal. Only economy flights and standard-class train tickets are reimbursable. Submit the travel expense claim with receipts within 30 days of the trip. Commuting between home and the office is not reimbursable. Synthetic training content added by the project team.

@@ -1,0 +1,3 @@
+Policy ID: HR-037
+Title: Short-Notice Work From Home (Synthetic Training Policy)
+Working from home on a day that was not agreed in advance needs the manager's approval before 09:00 on that day. Approval can be given by message. Short-notice days count towards the weekly work-from-home limit. Employees must be available during core hours and use the VPN. Synthetic training content added by the project team.

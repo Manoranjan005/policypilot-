@@ -1,0 +1,3 @@
+Policy ID: HR-036
+Title: Missed Punch and Attendance Recording (Synthetic Training Policy)
+Employees must punch in and punch out on every working day. A forgotten punch is corrected by submitting a missed punch request in the attendance system. The request must be made within two working days and confirmed by the manager. More than three forgotten punches in one month are discussed with the manager. Synthetic training content added by the project team.
