@@ -1,0 +1,3 @@
+Policy ID: HR-048
+Title: Loss of Pay (Synthetic Training Policy)
+Absence without approved leave is treated as loss of pay. The deduction for each day is monthly fixed pay divided by 30. Loss of pay is processed in the next payroll. Employees may ask HR to review a loss of pay entry. Synthetic training content added by the project team.

@@ -1,0 +1,3 @@
+Policy ID: HR-047
+Title: Salary Payment, Payslips and Deductions (Synthetic Training Policy)
+Salary is paid on the last working day of each month. Payslips are available in the HR portal. Deductions include income tax at source and the employee provident fund contribution of 12 percent of basic pay. Payslip queries must be raised with Payroll within 30 days of the payslip date. Synthetic training content added by the project team.

@@ -1,0 +1,3 @@
+Policy ID: HR-039
+Title: Leave Accrual for New Joiners (Synthetic Training Policy)
+Leave accrues from the first day of employment. During the first six months, employees may take only leave that has already accrued. Requests for leave that has not yet accrued are decided by HR on a case-by-case basis. Public holidays are not counted against accrued leave. Synthetic training content added by the project team.

@@ -1,0 +1,3 @@
+Policy ID: HR-038
+Title: Monthly Leave Limits (Synthetic Training Policy)
+Annual leave accrues at two days per month. Normally no more than five working days of annual leave may be taken in one calendar month. A manager may approve more than five days in a month after consulting HR, if team coverage allows. Leave of more than 15 consecutive working days also needs department head approval. The monthly limit does not apply in December. Synthetic training content added by the project team.

@@ -1,0 +1,3 @@
+Policy ID: HR-041
+Title: Leave Lapse and Encashment (Synthetic Training Policy)
+Unused annual leave above the five-day carry forward limit lapses on 31 December. Lapsed leave is not paid out. Leave cannot be exchanged for cash while an employee is employed. The leave balance is shown in the leave system and updated every month. Synthetic training content added by the project team.

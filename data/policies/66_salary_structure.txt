@@ -1,0 +1,3 @@
+Policy ID: HR-044
+Title: Salary Structure and Fixed Pay Split (Synthetic Training Policy)
+Fixed monthly pay is divided into basic pay, house rent allowance and special allowance. Basic pay is 40 percent of fixed pay. House rent allowance is 50 percent of basic pay. The remaining amount is paid as special allowance. The employer provident fund contribution is 12 percent of basic pay. Synthetic training content added by the project team.
