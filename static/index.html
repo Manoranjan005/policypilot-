@@ -323,8 +323,6 @@ h1,h2,h3,.brand,.pid,.num,.metric .v{font-family:var(--disp)}
         <p>Fictional HR and IT policies. Hover to pause the ring, click a card to read it.</p>
       </div>
       <div class="scene reveal"><div class="ring" id="ring"></div></div>
-      <div class="more"><button class="btn ghost" id="allbtn" type="button" hidden></button></div>
-      <div class="flatgrid" id="allp" hidden></div>
       <article class="reader reveal" id="reader" aria-live="polite" hidden></article>
     </section>
 
@@ -698,16 +696,10 @@ h1,h2,h3,.brand,.pid,.num,.metric .v{font-family:var(--disp)}
   function buildPolicies(list) {
     ring.textContent = '';
     list.forEach(function (p) { policies[p.policy_id] = p; });
-    var shown = list.slice(0, 8), n = Math.max(shown.length, 3);
+    var shown = list.slice(0, 6), n = Math.max(shown.length, 3);
     ring.style.setProperty('--a', (360 / n) + 'deg');
     ring.style.setProperty('--rz', Math.max(285, Math.round(270 / (2 * Math.tan(Math.PI / n)))) + 'px');
     shown.forEach(function (p, i) { ring.appendChild(pcard(p, i)); });
-    if (list.length > shown.length) {
-      var btn = document.getElementById('allbtn'), grid = document.getElementById('allp'), label = 'Browse all ' + list.length + ' policies';
-      btn.hidden = false; btn.textContent = label; grid.textContent = '';
-      list.forEach(function (p, i) { grid.appendChild(pcard(p, i)); });
-      btn.onclick = function () { grid.hidden = !grid.hidden; btn.textContent = grid.hidden ? label : 'Hide the full list'; };
-    }
   }
   function showPolicy(p, card) {
     Array.prototype.forEach.call(ring.children, function (c) { c.setAttribute('aria-pressed', c === card ? 'true' : 'false'); });
